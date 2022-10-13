@@ -2,6 +2,8 @@ $('.next').on('click', function() {
     var next = $(this).data('next');
     $(next).trigger("click");
     $('.custom-alert .alert').removeClass('show');
+
+    console.log(next);
 });
 
 $('.custom-form .input-uplode .content').on('click', function() {

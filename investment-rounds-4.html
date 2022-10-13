@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-7mQhpDl5nRA5nY9lr8F1st2NbIly/8WqhjTp+0oFxEA/QUuvlbF6M1KXezGBh3Nb" crossorigin="anonymous">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <title>الجولات الاستثمارية 4</title>
+    </head>
+    <body>
+
+        <!-- Start Nave Bar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a class="navbar-brand pe-4" href="#">مونفستر</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">إستعراض الفرص</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">من نحن</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-custom-color" href="#">إنشاء حساب</a>
+                        </li>
+                    
+                        <li class="nav-item btn-login">
+                            <a class="nav-link btn-custom-none-color" href="#">تسجيل الدخول</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-bottom-border"></div>
+        <!-- End Nav Bar -->
+    
+        <br /><br /><br />
+
+        <div class="custom-alert">
+            <div class="alert alert-success alert-dismissible p-2 fade" role="alert">
+                <i class="fa-solid fa-circle-info"></i> تم إضافة الفرصة بنجاح
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+        
+        <form action="" class="custom-form">
+            <div class="container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                            <span class="num">١</span>
+                            <span class="title mx-2">حجز مقعد</span>
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                            <span class="num">٢</span>
+                            <span class="title mx-2">موعد الحجز</span>
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="amount" data-bs-toggle="tab" data-bs-target="#amount-pane" type="button" role="tab" aria-controls="amount-pane" aria-selected="false">
+                            <span class="num">٢</span>
+                            <span class="title mx-2">الرسوم الإدارية</span>
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link confirm" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                            <span class="num">٤</span>
+                            <span class="title mx-2">التأكيد</span>
+                        </button>
+                    </li>
+                    
+                  </ul>
+                <div class="tab-content mt-5" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="subColor">حجز مقعد الإجتماع</h3>
+                                <p style="font-size:12px;color: rgba(1, 11, 56, 0.5);">
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف.
+                                </p>
+                                <br /><br />
+
+                                <div class="check-line">
+                                    <div>
+                                        <input type="radio" name="xx" id="check-line" />
+                                        <label for="check-line" class="subColor">حجز مقعد واحد</label>
+                                    </div>
+                                    <div><i class="fa-solid fa-chair mainColor"></i></div>
+                                </div>
+                                <div class="check-line">
+                                    <div>
+                                        <input type="radio" name="xx" id="check-line2" />
+                                        <label for="check-line2" class="subColor">
+                                            حجز باقي المقاعد 
+                                            <span style="color:#9e9e9e">( ٤ مقاعد )</span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-chair text-warning"></i>
+                                        <i class="fa-solid fa-chair text-warning"></i>
+                                        <i class="fa-solid fa-chair text-warning"></i>
+                                        <i class="fa-solid fa-chair text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="img/111.PNG" style="max-width: 100%;" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-12 mt-4">
+                                <div class="btns">
+                                    <a href="#" class="btn btn-custom-none-color">الغاء</a>
+                                    <a href="#" class="btn btn-custom-color next" data-next="#profile-tab">التالي</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        
+                        <h4>اختيار موعد الإجتماع</h4>
+
+                        <div class="row">
+
+                            <div class="col-md-5 mb-4">
+                                <p style="font-size:12px;color: rgba(1, 11, 56, 0.5);">
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف.
+                                </p>
+                                <br /><br />
+
+                                <label style="font-size:12px;">التاريخ</label>
+                                <input type="date" class="form-control mt-2 mb-1">
+                                
+                                <p style="color:rgba(1, 11, 56, 0.6);">
+                                    <i class="fa-regular fa-circle-check" style="color:#2FD976"></i>
+                                    نص مؤقت يمكن استبداله
+                                </p>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-5">
+                                <h6 class="subColor">جدول الأعمال*</h6>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="list-unstyled checkboxs">
+                                            <li>
+                                                <input type="checkbox" id="check1" />
+                                                <label for="check1">الفرصة</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="check-2" />
+                                                <label for="check-2">الحل</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="check-3" />
+                                                <label for="check-3">حجم السوق</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="check-4" />
+                                                <label for="check-4">نموذج العمل</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="check-5" />
+                                                <label for="check-5">الإنجازات السابقة</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="check-6" />
+                                                <label for="check-6">المنافسة</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="list-unstyled checkboxs">
+                                            <li>
+                                                <input type="checkbox" id="check-7" />
+                                                <label for="check-7">الخطة الزمنية</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="check-8" />
+                                                <label for="check-8">التمويل المطلوب</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="check-9" />
+                                                <label for="check-9">فريق العمل</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-12 mt-4">
+                                <div class="btns">
+                                    <a href="#" class="btn btn-custom-none-color next" data-next="#home-tab">السابق</a>
+                                    <a href="#" class="btn btn-custom-color next" data-next="#amount">التالي</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="amount-pane" role="tabpanel" aria-labelledby="amount" tabindex="0">
+                        <h4>دفع الرسوم الإدارية</h4>
+                        <p style="font-size:12px;color: rgba(1, 11, 56, 0.5);width:400px;">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف.
+                        </p>
+                        <br /><br />
+
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label style="font-size:12px;">كود الخصم</label>    
+                                <input type="text" class="form-control discount mt-2" placeholder="نص مؤقت يمكن استبداله" />
+                                <br /><br />
+
+                                <div class="mb-2">
+                                    <span class="subColor">الرسوم الإدارية</span>
+                                    <span class="mainColor float-end">١,٠٠٠ جنيه</span>
+                                </div>
+
+                                <div class="mb-2">
+                                    <span class="subColor">الضريبة</span>
+                                    <span class="mainColor float-end">٥٠ جنيه</span>
+                                </div>
+                                <hr />
+                                <div class="mb-2">
+                                    <span class="subColor">المجموع</span>
+                                    <span class="mainColor float-end">١,٠٠٠ جنيه</span>
+                                </div>
+                                <br />
+
+                                <div class="mb-2">
+                                    <input type="checkbox" name="" id="xx">
+                                    <label for="xx">
+                                        <span>الإقرار</span>
+                                        <a href="#" class="mainColor">بإتفاقية عدم الإفشاء</a>
+                                    </label>
+                                </div>
+                                    
+                                <div class="mb-2">
+                                    <input type="checkbox" name="" id="xx2">
+                                    <label for="xx2">
+                                        <span>الإقرار</span>
+                                        <a href="#" class="mainColor">بالشروط والأحكام</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-6">
+                                <ul class="list-inline text-end">
+                                    <li class="list-inline-item"><img src="img/p.PNG" alt=""></li>
+                                    <li class="list-inline-item"><img src="img/m.PNG" alt=""></li>
+                                    <li class="list-inline-item"><img src="img/v.PNG" alt=""></li>
+                                </ul>
+
+                                <div class="row">
+                                    <div class="col-4">
+                                        <label style="font-size:12px;">Expiry</label>    
+                                        <input type="text" class="form-control mt-2" placeholder="06/27" />
+                                        <br />
+                                    </div>
+                                    <div class="col-8">
+                                        <label style="font-size:12px;">Name on card</label>    
+                                        <input type="text" class="form-control mt-2" placeholder="Name on card" />
+                                        <br />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <label style="font-size:12px;">CVV</label>    
+                                        <input type="password" class="form-control mt-2" placeholder="***" />
+                                        <br />
+                                    </div>
+                                    <div class="col-8">
+                                        <label style="font-size:12px;">Card number</label>    
+                                        <input type="number" class="form-control mt-2" placeholder="Name on card" />
+                                        <br />
+                                    </div>
+                                </div>
+                                
+
+
+                            </div>
+
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-12 mt-4">
+                                <div class="btns">
+                                    <a href="#" class="btn btn-custom-none-color next" data-next="#profile-tab">السابق</a>
+                                    <a href="#" class="btn btn-custom-color confirm next" data-next="#contact-tab">تاكيد</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        
+                        <div class="row">
+                            <div class="col-md-3"></div>
+
+                            <div class="col-md-3 mb-4 text-center">
+                                <i class="fa-regular fa-5x fa-circle-check" style="color:#35AF7C;"></i>
+                            </div>
+
+                            <div class="col-md-3 mb-4">
+                                <h5>تم التأكيد</h5>
+                                <br />
+                                <p style="font-size:12px;color: rgba(1, 11, 56, 0.5);line-height:24px;">
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف.
+                                </p>
+
+                                <a href="#" class="btn btn-custom-none-color">الرئيسة</a>
+                                <span class="mx-2"></span>
+                                <a href="#" class="btn btn-custom-none-color">الفرصة</a>
+
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+
+                    </div>
+                        
+                </div>
+
+            </div> <!-- End Container -->
+        </form>
+ 
+
+        <br /><br /><br /><br />
+      
+        <!-- Start Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <h2>
+                            <a href="#" class="mainColor">مونفستر</a>
+                        </h2>
+                    </div>
+                    
+                    <div class="col-md-2">
+                        <p class="fo-title">الفرص الإستثمارية</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">الجولات الإستثمارية</a></li>
+                            <li class="mb-2"><a href="#">المنتديات العامة</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="fo-title">الشركة</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">من نحن</a></li>
+                            <li class="mb-2"><a href="#">تواصل معنا</a></li>
+                            <li class="mb-2"><a href="#">وظائف</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="fo-title">القانونية</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">الأحكام والشروط</a></li>
+                            <li class="mb-2"><a href="#">الخصوصية</a></li>
+                            <li class="mb-2"><a href="#">إتفاقية عدم الإفشاء</a></li>
+                            <li class="mb-2"><a href="#">موافقة أحكام الشريعة</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="fo-title">المساعدة</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">تواصل معنا</a></li>
+                            <li class="mb-2"><a href="#">أسئلة وأجوبة</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <hr />
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>© ٢٠٢٢ الحقوق محفوظة لشركة مونفستر</div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-inline text-end social">
+                            <li class="list-inline-item"><a href="#"><i class="fa-fw fa-brands fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa-fw fa-brands fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa-fw fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

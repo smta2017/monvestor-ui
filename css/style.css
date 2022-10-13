@@ -636,6 +636,31 @@ footer .social a {
 .custom-list li:nth-child(odd) {
     background-color: #ede9f6;
 }
+.check-line {
+    border: 1px solid var(--main-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.check-line i {
+    font-size: 25px;
+}
+.checkboxs li {
+    color: #010B38;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.discount {
+    border-color: var(--main-color);
+    width: 300px;
+    padding: 10px;
+}
+.custom-form .discount:focus{
+    border: 1px solid var(--main-color) !important;
+}
 @media (max-width: 768px) {
     .signup {
         width: 100%;
