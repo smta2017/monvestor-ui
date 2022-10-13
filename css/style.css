@@ -532,6 +532,110 @@ footer .social a {
 .signup {
     width: 300px;
 }
+.slider-imgs .big-img{
+    max-width: 100%;
+    height: 350px;
+}
+.slider-imgs .thum {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    max-width: 100%;
+}
+.slider-imgs .active {
+    border: 2px solid var(--main-color);
+}
+.file-line {
+    background-color: #FFF;
+    border: 1px solid #EDEEF2;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+.icon-file {
+    background-color: #dcd4ee;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 1px 1px 8px #ede9f6;
+}
+.custom-wissam,
+.custom-wissam2 {
+    border: 2px solid var(--main-color);
+    display: inline-block;
+    padding: 5px 15px;
+    position: relative;
+    border-radius: 8px;
+    background-color: #ede9f6;
+}
+.custom-wissam2 {
+    border-color: #2FD976;
+    background-color: #E5FFEE
+}
+.custom-wissam > div,
+.custom-wissam2 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-wissam i,
+.custom-wissam2 i {
+    font-size: 30px;
+    color: var(--main-color);
+}
+.custom-wissam2 i {
+    color: #24B755;
+}
+.custom-wissam .space,
+.custom-wissam2 .space {
+    height: 40px;
+    width: 1px;
+    background: #797979;
+    margin: 0 10px;
+}
+.custom-wissam .text,
+.custom-wissam2 .text {
+    font-size: 14px;
+}
+.price {
+    font-size: 64px;
+}
+.custom-progress {
+    overflow: visible;
+    position: relative;
+}
+.custom-progress .full {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 15px;
+    color: var(--main-color);
+}
+.custom-progress .progress-bar {
+    position: relative;
+    overflow: visible;
+}
+.custom-progress .progress-bar span{
+    position: absolute;
+    left: -8px;
+    top: 10px;
+    color: var(--main-color);
+    font-size: 15px;
+
+}
+.custom-list {
+    border-radius: 0;
+}
+.custom-list li {
+    border-color: transparent !important;
+
+}
+.custom-list li:nth-child(odd) {
+    background-color: #ede9f6;
+}
 @media (max-width: 768px) {
     .signup {
         width: 100%;

@@ -15,3 +15,12 @@ $('.custom-form .nav-item:nth-of-type(1),.custom-form .nav-item:nth-of-type(2)')
 $('.confirm').on('click', function() {
     $('.custom-alert .alert').toggleClass('show');
 });
+
+$('.slider-imgs .thum').on('click', function() {
+
+    var img = $(this).attr('src');
+    $('.big-img').attr('src', img);
+    $('.slider-imgs .thum').removeClass('active');
+    $(this).addClass('active');
+
+});
