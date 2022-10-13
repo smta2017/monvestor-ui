@@ -11,7 +11,7 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/style.css">
-        <title>أضف فرصة 3</title>
+        <title>أضف إعلان</title>
     </head>
     <body>
 
@@ -73,14 +73,14 @@
                     </li>
                     <li class="nav-item" role="presentation">
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                        <span class="num">١</span>
-                        <span class="title mx-2">ملفات الفرصة</span>
+                        <span class="num">٢</span>
+                        <span class="title mx-2">التعهد</span>
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link confirm" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
-                        <span class="num">١</span>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link confirm" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                          <span class="num">٤</span>
                         <span class="title mx-2">التأكيد</span>
                       </button>
                     </li>
@@ -96,21 +96,28 @@
                                     <p style="font-size:12px;color: rgba(1, 11, 56, 0.5);">
                                         هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.
                                     </p>
-                                    <h6 class="subColor my-5">بيانات الإستثمار</h6>
+                                    <h6 class="subColor my-5">بيانات الإعلان</h6>
 
-                                    <label style="font-size:12px;">فترة الإستثمار</label>
+                                    <label style="font-size:12px;">عنوان الإعلان</label>
+                                    <input type="text" name="" placeholder="نص مؤقت يمكن استبداله" class="form-control mt-2 mb-4">
+
+                                    <label style="font-size:12px;">تصنيف الإعلان</label>
                                     <select class="form-select mt-2 mb-4">
                                         <option value=""></option>
                                         <option value="">نص مؤقت يمكن استبداله</option>
                                     </select>
 
-                                    <label style="font-size:12px;">درجة المخاطرة</label>
+                                    <label style="font-size:12px;">الدولة</label>
                                     <select class="form-select mt-2 mb-4">
                                         <option value="">نص مؤقت يمكن استبداله</option>
                                     </select>
+
+                                    <label style="font-size:12px;">المدينة</label>
+                                    <input type="text" name="" placeholder="نص مؤقت يمكن استبداله" class="form-control mt-2 mb-4">
                                     
-                                    <label style="font-size:12px;">تاريخ نهاية الفرصة</label>
-                                    <input type="date" class="form-control mt-2 mb-4">
+                                    <label style="font-size:12px;">الوصف</label>
+                                    <textarea name="" placeholder="نص مؤقت يمكن استبداله" class="form-control mt-2 mb-4" rows="5"></textarea>
+                                    
                                     <br /><br />
                                 </div>
 
@@ -131,58 +138,34 @@
 
                     </div>
                     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                        <h4 class="subColor mb-4">ملفات الفرصة</h4>
-                        <p style="font-size:12px;color: rgba(1, 11, 56, 0.5);">
-                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى.
-                        </p>
-                        <h6 class="subColor my-5">ملفات الفرصة</h6>
-                        <br />
-
+                        
                         <div class="row">
 
-                            <div class="col-md-4 mb-4">
-                                <label style="font-size:12px;">صور الإستثمار</label>
-                                <div class="input-uplode mt-2">
-                                    <div class="content">
-                                        <span class="btn" style="background-color:#dcd4ee;">
-                                            <i class="fa-solid fa-arrow-up me-3"></i>
-                                            رفع صورة
-                                        </span>
-                                    </div>
-                                    <input type="file" name="" id="">
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4"></div>
-                            <div class="col-md-4">
+                            <div class="col-md-7 mb-4">
                                 
-                                <label style="font-size:12px;">ملف فكرة المشروع</label>
-                                <div class="input-group my-2">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <i class="fa-solid fa-arrow-up"></i>
-                                    </span>
-                                    <input type="text" class="form-control" placeholder="نص مؤقت يمكن استبداله" />
-                                </div>
-                                <br />
+                                    <h4 class="subColor mb-4">التعهد</h4>
+                                    <p style="font-size:12px;color: rgba(1, 11, 56, 0.5);line-height: 24px;">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
 
-                                <label style="font-size:12px;">ملف دراسة الجدوى</label>
-                                <div class="input-group my-2">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <i class="fa-solid fa-arrow-up"></i>
-                                    </span>
-                                    <input type="text" class="form-control" placeholder="نص مؤقت يمكن استبداله" />
-                                </div>
-                                <br />
+إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+                                    </p>
+                                    
+                                    <br />
 
-                                <label style="font-size:12px;">المرفقات</label>
-                                <div class="input-group my-2">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <i class="fa-solid fa-arrow-up"></i>
-                                    </span>
-                                    <input type="text" class="form-control" placeholder="نص مؤقت يمكن استبداله" />
-                                </div>
-                                <br />
+                                    <input type="checkbox" name="" id="check">
+                                    <label for="check">
+                                        <span class="subColor">الإقرار</span>
+                                        <span class="mainColor">بالتعهد</span>
+                                    </label>
+                                
+
                             </div>
-
+                            <div class="col-md-5">
+                                <div class="custom-con-img" style="background-image: url('img/00.jpg');">
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
 
                             <div class="col-12 mt-4">
                                 <div class="btns">
