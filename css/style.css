@@ -11,7 +11,8 @@
     color: var(--subColor) !important;
 }
 body {
-    background: linear-gradient(180deg, rgba(123, 97, 255, 0.15) 0%, rgba(217, 217, 217, 0) 100%);
+    /* background: linear-gradient(180deg, rgba(123, 97, 255, 0.15) 0%, rgba(217, 217, 217, 0) 100%); */
+    background: #FFF;
 }
 
 body,h1,h2,h3,h4,h5,h6,div,span,p,a {
@@ -397,7 +398,116 @@ footer .social a {
 .dropdown-item {
     font-size: 12px;
 }
+
+.custom-form .nav-tabs {
+    border: none !important;
+    justify-content: center;
+}
+.custom-form .nav-tabs .num {
+    width: 30px;
+    height: 30px;
+    color: #FFF;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #4F27AA;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 30px;
+}
+.custom-form .nav-tabs .title,
+.custom-form .nav-tabs i  {
+    color: rgba(1, 11, 56, 0.5);
+}
+
+.custom-form .nav-tabs .active .num {
+    background: var(--main-color);
+}
+.custom-form .nav-tabs .active .title {
+    color: var(--subColor);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background: none !important;
+    border: unset;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus-visible {
+    isolation: isolate;
+    border-color: transparent!important;
+}
+.custom-form .data {
+    width: 350px;
+}
+.custom-form .btns {
+    display: flex;
+    justify-content: space-between;
+}
+.custom-con-img {
+    background-size: cover;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.custom-con-img .overlay {
+    height: 400px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(119, 88, 189, 0.608958) 60.42%, rgba(79, 39, 170, 0.79) 100%);
+}
+
+.custom-form .input-uplode {
+    height: 196px;
+    border: 5px dotted #7252bb;
+    position: relative;
+    background-color: #ede9f6;
+}
+.custom-form .input-uplode input,
+.custom-form .input-uplode .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.custom-form .input-uplode .content {
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-form .input-uplode .content .btn {
+    color: var(--main-color);
+    font-size: 12px;
+}
+.custom-form .input-group .input-group-text{
+    background: none !important;
+    border-left: 0 !important;
+}
+.custom-form .input-group .form-control {
+    border-right: 0 !important;
+    outline: unset;
+    box-shadow: unset;
+}
+.custom-form .form-control:focus {
+    box-shadow: unset;
+    border-right: 0 !important;
+    border-color: #DDD;
+}
+.custom-alert {
+    position: fixed;
+    width: 400px;
+    top: 60px;
+    left: 40px;
+    z-index: 99999;
+}
+.custom-alert .alert-dismissible .btn-close {
+    padding: 12px;
+}
+.custom-form input,
+.custom-form select {
+    font-size: 12px;
+}
 @media (max-width: 768px) {
+    .custom-form .data {
+        width: 100%;
+    }
     .btn-login {
         margin: 10px 0 0 0;
     }
