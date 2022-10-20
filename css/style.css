@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5,h6 {
     background: var(--main-color);
     border-radius: 8px !important;
     color: #FFF !important;
-    padding: 8px 25px !important;
+    padding: 8px 22px;
     font-size: 14px;
 }
 
@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5,h6 {
     border: 1px solid #C8C9CC;
     border-radius: 8px !important;
     color: #010B38 !important;
-    padding: 8px 25px !important;
+    padding: 8px 22px;
     font-size: 14px;
     background: #FFFFFF;
 }
@@ -228,6 +228,7 @@ footer .social a {
     display: inline-block;
     position: absolute;
     top: 20px;
+    font-size: 12px;
 }
 .about .row-2 .owner {
     position: absolute;
@@ -257,9 +258,8 @@ footer .social a {
 .investment-tours .table td {
     border: unset;
 }
-
 .investment-tours .table th {
-    font-size: 24px;
+    font-size: 17px;
 }
 
 .investment-tours .table td {
@@ -760,4 +760,7 @@ input::placeholder,
 textarea::placeholder {
     font-size: 14px;
     font-weight: 300;
+}
+.navbar-collapse ul:last-child .nav-item {
+    margin-left: 0;
 }
