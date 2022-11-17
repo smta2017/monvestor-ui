@@ -844,3 +844,59 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
 }
+.request-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.request-stage li {
+    width: 200px;
+    height: 7px;
+    background-color: #DDD;
+    border-radius: 8px;
+}
+
+.request-stage .active {
+    background-color: var(--main-color);
+}
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.status .tag {
+    position: static;
+    margin: 0;
+}
+.invested-opportunities {
+    background-color: #fcfbff;
+}
+.invested-opportunities .box {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ddd;
+}
+.invested-opportunities .finished {
+    background-color: #E1E2E5;
+    color: #646466 !important;
+}
+.custom-drop .dropdown-toggle::after {
+    content: unset;
+}
+.gray{
+    color: gray;
+}
+.opportunity-type .item{
+    border: 2px solid #DDD;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.opportunity-type .active {
+    border-color: var(--main-color);
+}
+
+
