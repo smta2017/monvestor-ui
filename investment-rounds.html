@@ -52,21 +52,21 @@
         <div class="nav-bottom-border"></div>
         <!-- End Nav Bar -->
     
-        <br /><br /><br />
+        <div class="mt-100"></div>
         <div class="page">
             <div class="container">
 
                 <div class="row">
                     <div class="col-md-8">
                         <div class="nav-links">
-                            <a href="#" class="active"><i class="fa-solid fa-fan"></i> الجولات الإستثمارية</a>
-                            <a href="#"><i class="fa-solid fa-fan"></i> جولاتي المستثمر فيها</a>
-                            <a href="#"><i class="fa-solid fa-fan"></i> الجولات المغلقة</a>
+                            <a href="#" data-name="#block1" class="block active"><i class="fa-solid fa-fan"></i> فرص استثمارية</a>
+                            <a href="#" data-name="#block2" class="block"><i class="fa-solid fa-fan"></i> فرصي</a>
+                            <a href="#" data-name="#block3" class="block"><i class="fa-solid fa-fan"></i> فرص مغلقة</a>
                         </div>
                     </div>
                     <div class="col-md-4 text-end single-link">
                         <div class="nav-links">
-                            <a href="#" class="" style="background-color:unset!important;"><i class="fa-solid fa-fan"></i> جولاتي المنشأة</a>
+                            <a href="#" data-name="#block4" class="block" style="background-color:unset!important;"><i class="fa-solid fa-fan"></i> جولاتي المنشأة</a>
                         </div>
                     </div>
                 </div><!-- End row -->
@@ -102,14 +102,23 @@
                         <a href="#" class="btn btn-custom-color">اضافة فرصة</a>
                     </div>
                 </div><!-- End row -->
-                <br />
-                <br />
-                <br />
+                
+                <div class="mt-50"></div>
+
+                <div class="row block-content" id="block2" style="display:none;">
+                    <h1>block2</h1>
+                </div>
+
+                <div class="row block-content" id="block3" style="display:none;">
+                    <h1>block3</h1>
+                </div>
+                
+                <div class="row block-content" id="block4" style="display:none;">
+                    <h1>block4</h1>
+                </div>
 
 
-
-
-                <div class="row">
+                <div class="row block-content" id="block1">
                     <div class="col-md-4">
                         <div class="card p-1 mb-3">
                             <span class="tag tag-info">مسرع أعمال</span>
@@ -284,14 +293,10 @@
                     
                 </div>
 
-
-
             </div><!-- End container -->
         </div><!-- End page -->
- 
 
-        <br /><br /><br /><br />
-      
+        <div class="mt-100"></div>
         <!-- Start Footer -->
         <footer>
             <div class="container">
@@ -362,5 +367,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script>
+            $('.block').on('click', function() {
+
+                $('.block').removeClass('active');
+                $(this).addClass('active');
+
+                $('.block-content').css('display', 'none');
+                $( $(this).data('name') ).fadeIn(500)
+            });
+        </script>
     </body>
 </html>
