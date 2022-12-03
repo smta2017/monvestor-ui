@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/style.css">
         <title>أضف فرصة</title>
+        <style>
+            .item-item {opacity: 0;}
+        </style>
     </head>
     <body>
 
@@ -136,19 +139,23 @@
                         <div class="row opportunity-type">
 
                             <div class="col-md-2 mb-4">
-                                <span class="item">مسرع أعمال</span>
+                                <span class="item" data-id="item1">مسرع أعمال</span>
+                                <input type="checkbox" id="item1" class="item-item" />
                             </div>
 
                             <div class="col-md-2 mb-4">
-                                <span class="item active">شركة الناشئة</span>
+                                <span class="item active" data-id="item2">شركة الناشئة</span>
+                                <input type="checkbox" id="item2" checked class="item-item" />
                             </div>
                             
                             <div class="col-md-2 mb-4">
-                                <span class="item">إستحواز</span>
+                                <span class="item" data-id="item3">إستحواز</span>
+                                <input type="checkbox" id="item3" class="item-item" />
                             </div>
 
                             <div class="col-md-2 mb-4">
-                                <span class="item">توسع</span>
+                                <span class="item" data-id="item4">توسع</span>
+                                <input type="checkbox" id="item4" class="item-item" />
                             </div>
 
                         </div>
@@ -321,8 +328,16 @@
         <script src="js/main.js"></script>
         <script>
             $('.item').on("click", function() {
+
+                var input = $(this).data('id');
+
+                $('.item-item').attr('checked', false);
+                $('#'+input).attr('checked', true);
+
                 $('.item').removeClass('active');
                 $(this).addClass('active');
+
+                console.log(input);
             });
         </script>
     </body>
