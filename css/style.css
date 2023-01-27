@@ -676,6 +676,9 @@ footer .social a {
     margin-bottom: 5px;
     font-size: 14px;
 }
+.checkboxs li i {
+    color: var(--main-color);
+}
 .discount {
     border-color: var(--main-color);
     width: 300px;
